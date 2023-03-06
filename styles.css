@@ -1,5 +1,5 @@
 body {
-    background-image: url(media/4853433.jpg);
+    background: rgb(214, 200, 185);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -8,9 +8,49 @@ img {
     object-fit: contain;
 }
 
+p, h1, h3 {
+    color: rgb(69, 57, 55);
+}
+h1 {
+    font-family:'Abril Fatface', cursive;
+
+    font-size: 48px;
+}
+p {
+    text-align: left;
+    font-size: 16px;
+}
+p:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+em:hover {
+    color: white;
+    text-decoration: underline;
+}
 .row {
     text-align: center;
+    padding: 2%;
 }
 .card {
     border: none;
+}
+.card-text {
+    padding-top: 30px;
+}
+.bg-primary {
+    background-color:rgba(157, 130, 108,0.6)!important;
+}
+
+.bg-white:hover {
+    transition: 1s ease background;
+    background-color:rgb(203, 116, 68)!important;
+}
+
+.bg-white:not(hover) {
+    transition: 1s ease background;
+    background-color:white!important;
 }
