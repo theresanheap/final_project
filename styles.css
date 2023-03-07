@@ -125,3 +125,8 @@ em:hover {
     background: linear-gradient(180deg, rgba(161,165,105,1) 0%,
          rgba(205,209,164,1) 100%)!important;
 }**/
+
+.info-footer {
+    background-color: #144431;
+  color: white;
+}
