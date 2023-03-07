@@ -35,11 +35,42 @@ a {
 em:hover {
     text-decoration: underline;
 }
+.btn {
+    color: #C46834!important;
+    border-color: #C46834!important;
+}
+.btn:hover {
+    color: white!important;
+    background: #C46834!important;
+}
+.discount {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #144431;
+    color: white;
+    font-family: 'Golos Text', sans-serif;
+}
 .row {
     text-align: center;
-    padding: 2%;
 }
-
+.row-product {
+    text-align: center;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    /**background-color: rgba(20, 68, 49, 0.025);**/
+}
+.buy{
+    padding-bottom:10px;
+}
+.card {
+    border: 1px solid #144431;
+}
+.card-body {
+    padding-bottom: 0;
+}
 .card-text {
     padding-top: 30px;
 }
@@ -48,7 +79,7 @@ em:hover {
 }
 .card:hover{
     transition: ease 1s;
-    box-shadow: 0px 8px 68px -4px rgba(255,255,255,.5)!important;
+    box-shadow: 0px 32px 74px -10px rgba(66,79,80,0.7);
 }
 
 /** Gradient transition: https://keithjgrant.com/posts/2017/07/transitioning-gradients/ **/
