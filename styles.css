@@ -6,29 +6,36 @@ body {
 
 img {
     object-fit: contain;
+    border: solid 2px rgb(128, 142, 105);
 }
 
-p, h1, h3 {
-    color: rgb(69, 57, 55);
-}
 h1 {
     font-family:'Abril Fatface', cursive;
-
-    font-size: 48px;
+    font-size: 52px;
+    color: rgb(87, 33, 7)
 }
+
+h2 {
+    font-family: 'Unna', serif;
+    font-weight: bolder;
+    color: rgb(87, 33, 7)
+}
+
 p {
     text-align: left;
     font-size: 16px;
+    color: rgb(87, 33, 7);
+    
 }
 p:hover {
     text-decoration: underline;
+    color: rgb(69, 57, 55)
 }
 
 a {
     text-decoration: none;
 }
 em:hover {
-    color: white;
     text-decoration: underline;
 }
 .row {
@@ -36,7 +43,7 @@ em:hover {
     padding: 2%;
 }
 .card {
-    border: none;
+    border: solid 2px rgb(128, 142, 105);
 }
 .card-text {
     padding-top: 30px;
@@ -47,10 +54,10 @@ em:hover {
 
 .bg-white:hover {
     transition: 1s ease background;
-    background-color:rgb(203, 116, 68)!important;
+    background: linear-gradient(180deg, rgba(205,209,164,1) 0%, rgba(161,165,105,1) 100%)!important;
 }
 
 .bg-white:not(hover) {
     transition: 1s ease background;
-    background-color:white!important;
+    background: linear-gradient(180deg, rgba(161,165,105,1) 0%, rgba(205,209,164,1) 100%)!important;
 }
