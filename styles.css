@@ -1,35 +1,32 @@
 body {
-    background: rgb(214, 200, 185);
+    background: #F7F4F0;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 img {
     object-fit: contain;
-    border: solid 2px rgb(128, 142, 105);
 }
 
 h1 {
     font-family:'Abril Fatface', cursive;
     font-size: 52px;
-    color: rgb(87, 33, 7)
+    color: #3F241B;
 }
 
 h2 {
     font-family: 'Unna', serif;
     font-weight: bolder;
-    color: rgb(87, 33, 7)
+    color: #C46834;
 }
 
 p {
     text-align: left;
     font-size: 16px;
-    color: rgb(87, 33, 7);
+    color: #3F241B;
     
 }
 p:hover {
     text-decoration: underline;
-    color: rgb(69, 57, 55)
 }
 
 a {
@@ -42,22 +39,51 @@ em:hover {
     text-align: center;
     padding: 2%;
 }
-.card {
-    border: solid 2px rgb(128, 142, 105);
-}
+
 .card-text {
     padding-top: 30px;
 }
 .bg-primary {
     background-color:rgba(157, 130, 108,0.6)!important;
 }
-
-.bg-white:hover {
-    transition: 1s ease background;
-    background: linear-gradient(180deg, rgba(205,209,164,1) 0%, rgba(161,165,105,1) 100%)!important;
+.card:hover{
+    transition: ease 1s;
+    box-shadow: 0px 8px 68px -4px rgba(255,255,255,.5)!important;
 }
 
-.bg-white:not(hover) {
+/** Gradient transition: https://keithjgrant.com/posts/2017/07/transitioning-gradients/ **/
+
+.bg-white {
+position: relative;
+  min-height: 200px;
+  background-image: #DFD8CA!important;
+  z-index: 1;
+}
+.bg-white::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, rgba(164,183,157,1) 0%, rgba(205,223,197,1) 100%)!important;
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+.bg-white:hover::before {
+        opacity: 1;
+      }
+
+/**.bg-white:hover::before {
     transition: 1s ease background;
-    background: linear-gradient(180deg, rgba(161,165,105,1) 0%, rgba(205,209,164,1) 100%)!important;
+    background: linear-gradient(180deg, rgba(205,209,164,1) 0%, 
+        rgba(161,165,105,1) 100%)!important;
+        opacity: 1;
+}
+
+/**.bg-white:not(hover) {
+    transition: 1s ease background;
+    background: linear-gradient(180deg, rgba(161,165,105,1) 0%,
+         rgba(205,209,164,1) 100%)!important;
 }
